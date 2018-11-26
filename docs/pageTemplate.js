@@ -56,6 +56,7 @@ function getIndexContent() {
 					<a class="btn btn-primary" href="documentation.html" role="button">Documentation</a>
 					<h3>Click on the chart, zoom with scroll, pan with drag</h3>
 					<div id="chart" class="react-stockchart"></div>
+					<div id="try"></div>
 				</div>
 			</div>
 			<hr>

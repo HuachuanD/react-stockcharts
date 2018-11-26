@@ -1,38 +1,54 @@
 {
 	"presets": [
-		"react",
-		"stage-3"
+		"@babel/preset-react"
 	],
 	"plugins": [
-		"transform-flow-strip-types"
+		"@babel/transform-flow-strip-types",
+		"@babel/plugin-proposal-class-properties",
+		"@babel/plugin-syntax-dynamic-import",
+		"@babel/plugin-syntax-import-meta",
+		"@babel/plugin-proposal-json-strings"
 	],
 	"env": {
 		"cjs": {
-			"presets": [["env"]]
+			"presets": [
+				"@babel/preset-env"
+			]
 		},
 		"es": {
 			"presets": [
-				["env", { "modules": false  }]
+				[
+					"@babel/preset-env",
+					{
+						"modules": false
+					}
+				]
 			]
 		},
 		"watch": {
 			"presets": [
-				["env", {
-					"targets": {
-						"chrome": 59
-					},
-					"modules": false
-				}]
+				[
+					"@babel/preset-env",
+					{
+						"targets": {
+							"chrome": 59
+						},
+						"modules": false
+					}
+				]
 			]
 		},
 		"server": {
 			"presets": [
-				["env", {
-					"targets": {
-						"node": 7.5
-					},
-					"loose": true
-				}]
+				[
+					"@babel/preset-env",
+					{
+						"targets": {
+							"node": 7.5
+						},
+						"loose": true
+					}
+				]
 			]
 		}
 	}

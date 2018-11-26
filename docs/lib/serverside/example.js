@@ -40,8 +40,6 @@ var fs = require("fs"),
 
 const delimiter = "\t";
 
-var fs = require("fs"),
-	readline = require("readline");
 
 const rd = readline.createInterface({
 	input: fs.createReadStream(path.join("..", "..", "data", "MSFT.tsv")),

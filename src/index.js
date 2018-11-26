@@ -10,7 +10,7 @@ export { default as ZoomButtons } from "./lib/ZoomButtons";
 
 export const version = "0.7.8";
 
-/*
+
 // chart types & Series
 import * as series from "./lib/series";
 import * as scale from "./lib/scale";
@@ -28,4 +28,3 @@ import * as helper from "./lib/helper";
 import * as interactive from "./lib/interactive";
 import * as utils from "./lib/utils";
 
-*/
